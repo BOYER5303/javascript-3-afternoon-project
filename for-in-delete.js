@@ -11,13 +11,13 @@
   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
 */
 
-// var values = {
-//   one: 'These',
-//   two: ' are',
-//   three: ' the',
-//   four: ' property',
-//   five: ' values.'
-// } 
+//var values = {
+//one: 'These',
+//two: ' are',
+//three: ' the',
+//four: ' property',
+//five: ' values.'
+ //} 
 
 // for(var key in values) {
 //   console.log(values[key])
@@ -39,8 +39,12 @@
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-function showValues( obj ) {
-  //Code Here
+function showValues(values) {
+ let string ='';
+  for (let prop in values){
+  string += values[prop];
+ } //Code Here
+ return string
 }
 
 
@@ -54,9 +58,13 @@ function showValues( obj ) {
 */
 
 //Code Here
-
-
-
+function greaterThan10(object){
+  for (let key in object){
+if (object > 10) then {(object = 0);
+  }
+return object
+}
+}
 ////////// PROBLEM 3 //////////
 
 /*
@@ -66,7 +74,12 @@ function showValues( obj ) {
 */
 
 //Code Here
-
+function double(object){
+for (let key in object){
+  object = (object *= 2);
+}
+return object
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -79,8 +92,16 @@ function showValues( obj ) {
   By the end of the for in loop, you should have a sentence, return that sentence.
 */
 
-//Code Here
-
+//*Code Here
+function secrets(obj){
+  let emptyString = "";
+  for (let key in obj){
+  if (key.startsWith("Sh")) { emptyString.push;
+  
+}
+return emptyString;
+}
+}
 
 
 /* 

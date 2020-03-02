@@ -52,7 +52,9 @@ var employees = [
 
 //Code Here
 
-
+function employeeUpdater(){
+  if employees.firstName == Theo ? delete.employees: if employees.firstName  }
+}
 
 ////////// PROBLEM 2 //////////
 
