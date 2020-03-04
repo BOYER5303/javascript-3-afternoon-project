@@ -53,8 +53,9 @@ var employees = [
 //Code Here
 
 function employeeUpdater(){
-  if employees.firstName == Theo ? delete.employees: if employees.firstName  }
-}
+  if (employees.firstName == Theo) => {delete.employees}
+  (employees.firstName == Lorie) => {employees.department = "HR"}
+
 
 ////////// PROBLEM 2 //////////
 

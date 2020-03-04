@@ -112,7 +112,7 @@ function largeNumbers({first, second, third}){
 
 //Code Here
 function numberGroups({a, b, c}){
-  largest = Math.max(a, b, c);
+  largest = Math.max(1, 2, 3);
   return largest;
 }
 

@@ -22,10 +22,14 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 
 
 //Code Here
-newArray =[];
-let evenNumbers = mixedNumbers.filter(function(x, y, z) {
-    if => x = (x%2 === 0); return newArray.push;
-  })// = mixedNumbers.filter(/* Provide Your Callback Here */)
+evenNumbers =[];
+var evenNumbers = mixedNumbers.filter(function (x) {
+  if (x % 2 === 0 || x === 0) {
+    return x;
+  }
+})
+console.log(evenNumbers)
+  // = mixedNumbers.filter(/* Provide Your Callback Here */)
 
 
 
@@ -48,8 +52,9 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
 */
 
 //Code Here
-/*let postTaxPrices = prices.map(function(x) {
-  return x * 1.07;})// = prices.map(/* Provide Your Callback Here );
+let postTaxPrices = prices.map(function(x) {
+  return x *= 1.07;})
+  // = prices.map(/* Provide Your Callback Here );
 
 
 
@@ -68,9 +73,9 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 */
 
 //Code Here
-let totalPopulation = populations.reduce(function(add) {
-  return add = Mathsum.populations;
-})//  = populations.reduce(/* Provide Your Callback Here */)
+//populations.reduce(function(add) {
+let totalPopulation = populations.reduce(acc) => {return acc};
+//let myStrongest = monstersInYourPocket.filter(elem => elem.CP > 200)
 
 
 
@@ -94,9 +99,9 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 
   Use the filter method to return only the monsters that have a CP of over 200.
 */
-
+let myStrongest = monstersInYourPocket.filter(elem => elem.CP > 200)
 //Code Here
-let myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+// = monstersInYourPocket.filter(/* Provide Your Callback Here */)
 
 
 
