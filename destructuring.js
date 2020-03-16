@@ -111,8 +111,15 @@ function largeNumbers({first, second, third}){
 */
 
 //Code Here
+
+
 function numberGroups({a, b, c}){
-  largest = Math.max(1, 2, 3);
-  return largest;
+  let arrays = [a,b,c]
+  let longest =[]
+  arrays.forEach(array, index) => { 
+    if (array.length > longest.length){
+    longest.push(arrays[index])
+  }}
+return longest
 }
 

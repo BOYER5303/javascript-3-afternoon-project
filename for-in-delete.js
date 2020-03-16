@@ -60,10 +60,11 @@ function showValues(values) {
 //Code Here
 function greaterThan10(object){
   for (let key in object){
-if (object > 10) then {(object = 0);
+if (object.key > 10){ return object.key === 0;
   }
-return object
+
 }
+return object
 }
 ////////// PROBLEM 3 //////////
 
@@ -76,7 +77,7 @@ return object
 //Code Here
 function double(object){
 for (let key in object){
-  object = (object *= 2);
+  object.key(key *= 2);
 }
 return object
 }
@@ -110,17 +111,17 @@ return emptyString;
   Uncomment the example below to see a for in loop deleting all the properties inside an object.
 */
 
-// var deleteAllThethings = {
-//   one: 1,
-//   two: 2,
-//   three: 3
-// }
+var deleteAllThethings = {
+  one: 1,
+  two: 2,
+  three: 3
+}
 
-// for(var key in deleteAllThethings) {
-//   delete deleteAllThethings[key]
-// }
+for(var key in deleteAllThethings) {
+  delete deleteAllThethings[key]
+}
 
-// console.log(deleteAllThethings)
+console.log(deleteAllThethings)
 
 
 
@@ -132,7 +133,12 @@ return emptyString;
 */
 
 //Code Here
-
+function removePassword(obj){
+  for (var key in obj) {
+    delete obj.password[key]
+  }
+  return obj
+}
 
 
 ////////// PROBLEM 6 //////////
@@ -152,7 +158,11 @@ var deleteTheBigNumbers = {
 
 //Code Here
 
-
+for(var key in deleteTheBigNumbers) { 
+  if (key > 100) {
+  delete deleteTheBigNumbers[key]
+}
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -164,7 +174,9 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
-
+function startsWithK(obj){
+  
+}
 
 
 ////////// PROBLEM 8 //////////
@@ -179,5 +191,7 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
-
+function hiddenTreasure(obj){
+  
+}
 
